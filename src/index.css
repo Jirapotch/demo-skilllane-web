@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+@media (min-width: 1025px) {
+  .col-course-item {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px)  {
+  .col-course-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.ant-card .ant-card-body {
+  padding: 0px;
+  height: 350px;
+}
+
+@media (max-width: 991px) {
+  .ant-card .ant-card-body {
+    height: 150px;
+  }
+}
+
+.ant-card .ant-card-cover img {
+  border-radius: 0;
+}
+
+.ant-card-actions {
+  border-top: unset !important;
+}
+
+.course_item {
+  height: 100%;
+}
+
+.course_item:hover .course-hover {
+  display: block;
+}
+
+.course_item .course-hover {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+}
+
+.course_item .content-thumbnail {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.course_item .content-thumbnail .thumbnail-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.course_item .course-hover-instructor {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.course_item .instructor-hover-image {
+  position: absolute;
+  left: 5px;
+}
+
+
+.course_item .instructor-hover-name {
+  font-size: 15px;
+  color: white;
+}
+
+.course_item .instructor-hover-desc {
+  font-size: 11px;
+  line-height: 1.1;
+  color: white;
+}
+
+.course_item .video-detail-count {
+  font-size: 11px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 4px;
+}
+
+.content-detail-title {
+  margin: 0px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #00532a;
+  height: 75px;
+}
+
+.content-detail-instructor {
+  display: flex;
+  align-items: center;
+  padding: 1px 5px
+}
+
+.content-price {
+  margin: 0px 10px 0px 0px;
+}
+
+.content-price-row {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.content-price-discount {
+  display: inline-block;
+  font-size: 18px;
+  color: #57a267;
+}
+
+.content-type-academic {
+  display: inline-block;
+  width: 80px;
+  font-size: 12px;
+  color: #555;
+}
+
+.three-line-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
